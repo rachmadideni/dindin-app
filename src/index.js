@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import reportWebVitals from './reportWebVitals';
-
+import MobileNumberPage from "./containers/MobileNumber";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="container-xs p-5">
+    	<MobileNumberPage />    	
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
