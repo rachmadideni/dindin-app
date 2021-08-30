@@ -5,9 +5,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAFA!important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.intl-tel-input * .country-list {
+	margin-top: 1rem!important;
+	border-radius: .5rem;
+	margin-bottom:1rem!important;
+}
+
+.intl-tel-input * .selected-flag:after {
+	content:"";
+	position: absolute;	
+	background-color: #CCCCCC;
+	top:25%;
+	bottom:25%;
+	right:-5px;
+	width: 1px;
+    height: auto;
+}
+
+.intl-tel-input.hasError {
+	border: solid 2px red;
+}
+
+.form-control-plaintext:focus {	
+	outline:0;
+}
+
+.errorText {
+	color:red;
+	font-weight: bold;
+}
+
+.selected-flag {
+	display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;    
+}
+
+.selected-flag .selected-dial-code {
+	padding-left: 5px!important;
+	font-weight: bold;
+}
+
+.separate-dial-code .selected-flag {
+	background-color: transparent!important;
+}
+
+.btn-pill {
+	border-radius: 4rem!important;
+}
+
+.btn-disabled {
+	background-color: #CCCCCC!important;
+	border-color: #CCCCCC!important;
+	color: white!important;
 }
